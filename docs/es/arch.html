@@ -7,15 +7,17 @@
     <title>Nieve - Arquitectura</title>
 </head>
 <body style="text-align: justify;">
-    <h1 name="arch">Arquitectura</h1>
-    <div class="idx" name="content">
+    <h1>Arquitectura</h1>
+    <div class="idx" id="content">
         <p class="idx-title"><b>Contenido</b></p>
         <ul>
             <li><a href="#content">Contenido</a></li>
             <li><a href="#intro">Introducción</a></li>
+            <li><a href="#model">Modelo</a></li>
+            <li><a href="#def">Definiciones</a></li>
         </ul>
     </div>
-    <h2 name="intro">Introducción</h2>
+    <h2 id="intro">Introducción</h2>
     <p>
         La Arquitectura de software es el diseño de más alto nivel de la estructura de un sistema.
         Consiste en un conjunto de patrones y abstracciones coherentes que proporcionan un marco 
@@ -24,5 +26,47 @@
         conforman la arquitectura de este proyecto. De esto de obtienen bases sólidas y escalables
         que serán útiles durante toda la etapa de desarrollo.
     </p>
+    <h2 id="model">Modelo</h2>
+    <p>Existen modelos predefinidos, lo cual nos permite agilizar el proceso de planificación
+        del proyecto. Uno de estos modelos es la
+        <a href="https://es.wikipedia.org/wiki/Programaci%C3%B3n_por_capas">proramación por capas</a>.
+        <br>
+        Las bases de esta arquitectura permanecen en el diseño, lo demás es ajustado a las
+        necesidades del proyecto.
+    </p>
+    <p>
+        La primera versión del modelo de arquitectura cuenta con tres <strong>niveles</strong> / pisos y cinco <strong>capas</strong>:
+        <ol>
+            <li>Primer nivel.</li>
+            <ul>
+                <li><i>Interface</i> o presentación.</li>
+                <li><i>Drivers</i> o controladores.</li>
+            </ul>
+            <li>Segundo nivel.</li>
+            <ul>
+                <li><i>Logistics</i> o logística.</li>
+            </ul>
+            <li>Tercer nivel.</li>
+            <ul>
+                <li>Recursos de datos descentralizados (<i>DDR</i>, por sus siglas en inglés).</li>
+                <li><i>Database</i> o base de datos.</li>
+            </ul>
+        </ol>
+    </p>
+    <img src="../nieve-arch-model-v1.png" alt="Nieve arch model" height="512" width="512" onContextMenu="return false;">
+    <h3 id="def">Definiciones</h3>
+    <dl>
+        <dt>Nivel o piso.</dt>
+        <dd>Es un conjunto de capas que conforman la infraestructura lógica del proyecto.</dd>
+        <dt>Capa.</dt>
+        <dd>
+            Es un segmento lógico que realiza determinada tarea de forma independiente.
+            Las capas pueden tener intercomunicación por medio de <i>pipelines</i> y <i>risers</i>.
+        </dd>
+        <dt><i>Pipelines</i> o tuberías.</dt>
+        <dd></dd>
+        <dt><i>Risers</i> o elevadores.</dt>
+        <dd></dd>
+    </dl>
 </body>
 </html>
